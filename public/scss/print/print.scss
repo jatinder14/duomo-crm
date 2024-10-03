@@ -1,0 +1,53 @@
+//Grow CRM - Printing Styling
+//Notes: This is compiled on its own
+
+.print-page {
+    background: #ffffff !important;
+    color: #000000 !important;
+
+    .page-wrapper {
+        background: #ffffff !important;
+    }
+
+    .docs-main-wrapper {
+        color: #000000 !important;
+        .text-muted{
+            color: #000000 !important;
+        }
+    }
+
+    body {
+        background: #ffffff !important;
+
+        .topbar,
+        .page-titles,
+        .doc-footer-actions-container,
+        #nprogress,
+        .left-sidebar {
+            display: none;
+        }
+
+        .page-wrapper {
+            margin-left: 0px;
+            padding-top: 0px;
+        }
+
+        .box-shadow {
+            box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+            -moz-box-shadow: none !important;
+        }
+
+        .print-float-left {
+            float: left;
+        }
+
+        .print-float-right {
+            float: left;
+        }
+
+        .loading{
+            display: none !important;
+        }
+    }
+}

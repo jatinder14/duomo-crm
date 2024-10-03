@@ -1,0 +1,70 @@
+/*******************/
+
+/*Comment widgets*/
+
+/*******************/
+
+.comment-widgets {
+    position: relative;
+    margin-bottom: 25px;
+    .comment-row {
+        border-bottom: 1px solid transparent;
+        padding: 15px;
+        &:last-child {
+            border-bottom: 0px;
+        }
+        &:hover,
+        &.active {
+            /*background: $bglight;*/
+        }
+        &.no-hover{
+          &:hover,
+          &.active {
+            background: initial;
+          }          
+        }
+    }
+        .x-attachements {
+            padding-top: 20px;
+            border-top: solid 1px $border-color;
+            margin: 0px 20px;
+            padding-bottom: 10px;
+            &:after {}
+        }
+}
+
+.comment-text {
+    padding: 15px 15px 15px 20px;
+    width: 80%;
+    &:hover .comment-footer,
+    &.active .comment-footer {
+        .action-icons {
+            visibility: visible;
+        }
+    }
+    p {
+        width: 100%;
+    }
+}
+
+.comment-footer {
+    .action-icons {
+        visibility: hidden;
+        font-size: 16px;
+        a {
+            padding-left: 7px;
+            vertical-align: middle;
+            color: $muted;
+            &:hover,
+            &.active {
+                color: $info;
+            }
+            &.danger {
+                &:hover,
+                &.active {
+                    color: $danger;
+                }
+            }
+        }
+    }
+}
